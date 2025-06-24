@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1"><br></p>
+<p class="p2">&lt;html&gt;</p>
+<p class="p2">&lt;head&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;meta name="generator" content="pandoc"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;meta name="author" content=""&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;title&gt;Differential Equations&lt;/title&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;meta name="apple-mobile-web-app-status-bar-style" content="white-translucent"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=100, initial-scale=0.5, maximum-scale=0.5, user-scalable=no, minimal-ui"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reset.css"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>.reveal .sourceCode {<span class="Apple-converted-space">  </span>/* see #7635 */</p>
+<p class="p2"><span class="Apple-converted-space">      </span>overflow: visible;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>code{white-space: pre-wrap;}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>span.smallcaps{font-variant: small-caps;}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>div.columns{display: flex; gap: min(4vw, 1.5em);}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>div.column{flex: auto; overflow-x: auto;}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>/* The extra [class] is a hack that increases specificity enough to</p>
+<p class="p2"><span class="Apple-converted-space">       </span>override a similar rule in reveal.js */</p>
+<p class="p2"><span class="Apple-converted-space">    </span>ul.task-list[class]{list-style: none;}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>ul.task-list li input[type="checkbox"] {</p>
+<p class="p2"><span class="Apple-converted-space">      </span>font-size: inherit;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>width: 0.8em;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>margin: 0 0.8em 0.2em -1.6em;</p>
+<p class="p2"><span class="Apple-converted-space">      </span>vertical-align: middle;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/simple.css" id="theme"&gt;</p>
+<p class="p2">&lt;/head&gt;</p>
+<p class="p2">&lt;body&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;div class="reveal"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div class="slides"&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;section id="title-slide"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;h1 class="title"&gt;Differential Equations&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;p class="author"&gt;İYTE lecture materials from Kemal Cem Yılmaz&lt;/p&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;section&gt;</p>
+<p class="p2">&lt;section id="introduction" class="title-slide slide level1"&gt;</p>
+<p class="p2">&lt;h1&gt;Introduction&lt;/h1&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p2">&lt;section id="section" class="slide level2"&gt;</p>
+<p class="p2">&lt;h2&gt;&lt;/h2&gt;</p>
+<p class="p2">&lt;p&gt;&lt;span class="math display"&gt;\[{</p>
+<p class="p2">\begin{matrix}</p>
+<p class="p2">&amp;amp; \text{Dynamic Station} &amp;amp; \text{Rate of Change} \\</p>
+<p class="p2">\hline</p>
+<p class="p2">\text{Heat} &amp;amp; \text{Diffuses} &amp;amp; \text{Rate of Change of</p>
+<p class="p2">TEMPERATURE} \\</p>
+<p class="p2">\hline</p>
+<p class="p2">\text{Wave} &amp;amp; \text{Propagates} &amp;amp; \text{Rate of Change of ENERGY</p>
+<p class="p2">OF WAVE} \\</p>
+<p class="p2">\hline</p>
+<p class="p2">\text{Population} &amp;amp; \text{Grows} &amp;amp; \text{Rate of Change of</p>
+<p class="p2">POPULATION} \\</p>
+<p class="p2">\hline</p>
+<p class="p2">\text{Object} &amp;amp;<span class="Apple-converted-space">  </span>\text{Moves} &amp;amp; \text{Rate of Change of</p>
+<p class="p2">DISPLACEMENT} \\</p>
+<p class="p2">\end{matrix}</p>
+<p class="p2">}\]&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p2">&lt;section id="definition" class="slide level2"&gt;</p>
+<p class="p2">&lt;h2&gt;Definition&lt;/h2&gt;</p>
+<p class="p2">&lt;p&gt;&lt;span class="math display"&gt;\[F(x , y, x&amp;#39;, y&amp;#39;, x&amp;#39;&amp;#39;,</p>
+<p class="p2">y&amp;#39;&amp;#39;, \ldots , x^n, y^n) = 0\]&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2">&lt;p&gt;&lt;em&gt;Example&lt;/em&gt;:&lt;/p&gt;</p>
+<p class="p2">&lt;p&gt;&lt;span class="math display"&gt;\[y&amp;#39;&amp;#39; - 2xy&amp;#39; + y =</p>
+<p class="p2">x^2\]&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p2">&lt;section id="example-in-physics" class="slide level2"&gt;</p>
+<p class="p2">&lt;h2&gt;Example in Physics&lt;/h2&gt;</p>
+<p class="p2">&lt;p&gt;&lt;span class="math display"&gt;\[\vec{F}_{net}=k\vec{v}(t)\]&lt;/span&gt; &lt;span</p>
+<p class="p2">class="math display"&gt;\[\bigtriangleup\]&lt;/span&gt; &lt;span</p>
+<p class="p2">class="math display"&gt;\[|\]&lt;/span&gt; &lt;span</p>
+<p class="p2">class="math display"&gt;\[\bigcirc\]&lt;/span&gt; &lt;span</p>
+<p class="p2">class="math display"&gt;\[|\]&lt;/span&gt; &lt;span</p>
+<p class="p2">class="math display"&gt;\[\bigtriangledown\]&lt;/span&gt; &lt;span</p>
+<p class="p2">class="math display"&gt;\[\vec{F}_{net}=- m\vec{g}\]&lt;/span&gt; &lt;span</p>
+<p class="p2">class="math display"&gt;\[\]&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2">&lt;p&gt;&lt;span class="math display"&gt;\[\vec{F}_{net}=m \vec{a}\]&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2">&lt;p&gt;&lt;span class="math display"&gt;\[k\vec{v}(t) - m\vec{g} = m</p>
+<p class="p2">\vec{a}\]&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2">&lt;p&gt;&lt;span class="math display"&gt;\[k {\dot{y}}(t) - m {\ddot{y}}(t) -</p>
+<p class="p2">m\vec{g} = 0\]&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2">&lt;/section&gt;&lt;/section&gt;</p>
+<p class="p2">&lt;section&gt;</p>
+<p class="p2">&lt;section id="classification" class="title-slide slide level1"&gt;</p>
+<p class="p2">&lt;h1&gt;Classification&lt;/h1&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p2">&lt;section id="section-1" class="slide level2"&gt;</p>
+<p class="p2">&lt;h2&gt;&lt;/h2&gt;</p>
+<p class="p2">&lt;p&gt;&lt;span class="math display"&gt;\[{</p>
+<p class="p2">\begin{matrix}</p>
+<p class="p2">\text{Number of independent variables} &amp;amp; \text{Short Name} &amp;amp;</p>
+<p class="p2">\text{Name} \\</p>
+<p class="p2">\hline</p>
+<p class="p2">\text{1} &amp;amp; \text{ODE} &amp;amp; \text{Ordinary Differential Equation} \\</p>
+<p class="p2">\text{more than 1} &amp;amp; \text{PDE} &amp;amp; \text{Partial Differential E-quation} \\</p>
+<p class="p2">\end{matrix}</p>
+<p class="p2">}\]&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p2">&lt;section id="section-2" class="slide level2"&gt;</p>
+<p class="p2">&lt;h2&gt;&lt;/h2&gt;</p>
+<p class="p2">&lt;p&gt;&lt;span class="math display"&gt;\[{</p>
+<p class="p2">\begin{matrix}</p>
+<p class="p2">\text{Linear} &amp;amp; \text{Non Linear} \\</p>
+<p class="p2">\hline</p>
+<p class="p2">\text{in the form of: } \sum\limits_{n=0}^{N} a_n y^n \text{<span class="Apple-converted-space">    </span>} &amp;amp;</p>
+<p class="p2">\text{<span class="Apple-converted-space">    </span>} \text{NOT in the form of: } \sum\limits_{n=0}^{N} a_n y^n \\</p>
+<p class="p2">\end{matrix}</p>
+<p class="p2">}\]&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2">&lt;/section&gt;</p>
+<p class="p2">&lt;section id="section-3" class="slide level2"&gt;</p>
+<p class="p2">&lt;h2&gt;&lt;/h2&gt;</p>
+<p class="p2">&lt;p&gt;If a differential equation is homogeneous in the unknown functions</p>
+<p class="p2">and its derivatives then it is said to be homogeneous&lt;/p&gt;</p>
+<p class="p2">&lt;p&gt;&lt;span class="math display"&gt;\[\begin{matrix}</p>
+<p class="p2">y&amp;#39;+y=x &amp;amp; \text{nonhomogeneous} \\</p>
+<p class="p2">xy&amp;#39;+y=0 &amp;amp; \text{homogeneous} \\</p>
+<p class="p2">sin(\ddot{y})-cos(y)=x^2 &amp;amp; \text{nonhomogeneous} \\</p>
+<p class="p2">\end{matrix}\]&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2">&lt;/section&gt;&lt;/section&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;!-- reveal.js plugins --&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;script src="https://unpkg.com/reveal.js@^5/plugin/math/math.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><br></p>
+<p class="p2">&lt;script&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>Reveal.initialize({</p>
+<p class="p2"><span class="Apple-converted-space">    </span>width: 1920,</p>
+<p class="p2"><span class="Apple-converted-space">    </span>height: 1080,</p>
+<p class="p2"><span class="Apple-converted-space">    </span>margin: 0.05,</p>
+<p class="p2"><span class="Apple-converted-space">    </span>minScale: 0.2,</p>
+<p class="p2"><span class="Apple-converted-space">    </span>maxScale: 0.5,</p>
+<p class="p2"><span class="Apple-converted-space">    </span>controls: true,</p>
+<p class="p2"><span class="Apple-converted-space">    </span>progress: true,</p>
+<p class="p2"><span class="Apple-converted-space">    </span>hash: true,</p>
+<p class="p2"><span class="Apple-converted-space">    </span>center: true,</p>
+<p class="p2"><span class="Apple-converted-space">    </span>transition: 'slide',</p>
+<p class="p2"><span class="Apple-converted-space">    </span>math: {</p>
+<p class="p2"><span class="Apple-converted-space">      </span>mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',</p>
+<p class="p2"><span class="Apple-converted-space">      </span>config: 'TeX-AMS_HTML-full'</p>
+<p class="p2"><span class="Apple-converted-space">    </span>},</p>
+<p class="p2"><span class="Apple-converted-space">    </span>plugins: [</p>
+<p class="p2"><span class="Apple-converted-space">      </span>RevealMath,</p>
+<p class="p2"><span class="Apple-converted-space">      </span>RevealNotes,</p>
+<p class="p2"><span class="Apple-converted-space">      </span>RevealSearch,</p>
+<p class="p2"><span class="Apple-converted-space">      </span>RevealZoom</p>
+<p class="p2"><span class="Apple-converted-space">    </span>]</p>
+<p class="p2"><span class="Apple-converted-space">  </span>});</p>
+<p class="p2">&lt;/script&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;/body&gt;</p>
+<p class="p2">&lt;/html&gt;</p>
+<p class="p1"><br></p>
+</body>
+</html>
